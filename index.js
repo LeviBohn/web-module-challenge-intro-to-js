@@ -19,7 +19,13 @@ Do the following:
 
    HINT: no function required
 */
+const votingAge = 18;
 
+if(votingAge >= 18) {
+  console.log('task 1a:', true);
+}else{
+  console.log('task 1a:', false);
+}
 
 
 /*
@@ -34,9 +40,13 @@ Do the following:
    HINT: no function required
 */
 
+let firstThing = 'thing one';
+let secondThing = 'thing two';
 
-
-
+if(secondThing = 'thing two'){
+  firstThing = 'thing three';
+}
+console.log('task 1b:', firstThing);
 
 /*
 Task 1c - Convert Strings to Numbers (not auto tested)
@@ -48,8 +58,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
+const graduation = '1999';
+console.log('task 1c:', Number(graduation));
 
 
 /*
@@ -61,9 +71,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(num1, num2){
-  return num1 * num2;
+function multiply(a, b){
+  return a * b;
 }
+console.log('task 1d:', multiply(2,5));
 
 
 
@@ -77,10 +88,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(humanYears){
+  return humanYears * 7;
 }
-
+console.log('task 2:', dogYears(3));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -129,10 +140,24 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(weight, ageYears){
+  if (weight <= 5 && ageYears >= 1) {
+    return weight * 0.05;
+  } else if (weight < 11 && ageYears >= 1) {
+    return weight * 0.04;
+  } else if (weight < 15 && ageYears >= 1) {
+    return weight * 0.03;
+  } else if (weight > 15 && ageYears >= 1){
+    return weight * 0.02;
+  } else if (ageYears < .417){
+    return weight * 0.10;
+  } else if (ageYears < .584){
+    return weight * 0.05;
+  } else if (ageYears < 1.00){
+    return weight * 0.04;
+  }
 }
-
+console.log('task 3:', hungryDog(8,0));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
