@@ -283,11 +283,11 @@ function grade(number){
 if (number >= 90){
   return 'you got an A';
 } else if (number >= 80){
-  return 'you got an B';
+  return 'you got a B';
 } else if (number >= 70){
-  return 'you got an C';
+  return 'you got a C';
 } else if (number >= 60){
-  return 'you got an D';
+  return 'you got a D';
 } else {
   return 'you got an F';
 }
