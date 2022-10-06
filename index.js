@@ -205,7 +205,7 @@ function game(user, computer){
   }
 }
 
-console.log('task 4:', 'computer threw', computer,'.', game('scissors', computer));
+console.log('task 4:', 'computer threw', computer,'.', game('rock', computer));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -252,9 +252,13 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(bottles){
+    return bottles + ' bottles of soda on the wall, ' + bottles + ' bottles of soda,' + ' take one down pass it around ' + (bottles - 1) + ' bottles of soda on the wall';
 }
+  console.log('task 6:', annoyingSong(2));
+
+
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
