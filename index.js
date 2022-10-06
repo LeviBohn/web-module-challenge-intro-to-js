@@ -255,7 +255,10 @@ Using the annoyingSong function below do the following:
 function annoyingSong(bottles){
     return bottles + ' bottles of soda on the wall, ' + bottles + ' bottles of soda,' + ' take one down pass it around ' + (bottles - 1) + ' bottles of soda on the wall';
 }
-  console.log('task 6:', annoyingSong(2));
+for (let i = 7; i > 0; i--){
+  console.log('task 6:', annoyingSong(i));
+}  
+
 
 
 
